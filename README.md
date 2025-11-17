@@ -131,7 +131,7 @@ Clustering is a way for computers to group things that are similar—like organi
 
 ## [DBSCAN Algorithm]()
 
-**DBSCAN** stands for "Density-Based Spatial Clustering of Applications with Noise." It helps find groups in data where points are close together, based on how many neighbors each point has.
+**DBSCAN** stands for "[***Density-Based Spatial Clustering of Applications with Noise.***]()" It helps find groups in data where points are close together, based on how many neighbors each point has.
 
 
 <br><br>
