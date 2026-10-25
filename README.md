@@ -97,34 +97,88 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 
 <!--END-->
 
+
+#
+
 <br><br>
+
+
 
 Welcome to your repository guide for [DataMining DBSCAN_and_Spectral Clustering](https://github.com/Quantum-Software-Development/14-DataMining_DBSCAN_and_Spectral-Clustering-). This Repo is written so anyone—even kids, can understand the two powerful clustering algorithms: [***DBSCAN***]() and [***Spectral Clustering***]().
 
+
+<br><br>
+
+## Table of Contents
+
+
+- [What is Clustering?](#what-is-clustering)
+- [DBSCAN Algorithm](#dbscan-algorithm)
+    - [How DBSCAN Works (Step-by-Step)](#how-dbscan-works-step-by-step)
+    - [Core, Border, and Noise Points](#core-border-and-noise-points)
+    - [DBSCAN Parameters: Epsilon and MinPts](#dbscan-parameters-epsilon-and-minpts)
+    - [Strengths and Limitations of DBSCAN](#strengths-and-limitations-of-dbscan)
+- [Spectral Clustering](#spectral-clustering)
+    - [How Spectral Clustering Works (for Kids!)](#how-spectral-clustering-works-for-kids)
+    - [Main Ideas in Spectral Clustering](#main-ideas-in-spectral-clustering)
+    - [Pros and Cons of Spectral Clustering](#pros-and-cons-of-spectral-clustering)
+- [Applications and When to Use Each](#applications-and-when-to-use-each)
+- [References](#references)
+
+
+<br><br>
+
+## [What is Clustering ?]()
+
+<br>
+
+Clustering is a way for computers to group things that are similar—like organizing marbles by color, or animals by species. The computer looks for natural groups in the data, so points in the same group are more like each other than points in other groups. Some points might not fit anywhere; finding them is important too!
+
+
+<br><br>
+
+## [DBSCAN Algorithm]()
+
+<br>
+
+**DBSCAN** stands for "[***Density-Based Spatial Clustering of Applications with Noise.***]()" It helps find groups in data where points are close together, based on how many neighbors each point has.
+
+
 <br><br>
 
 
+## [How DBSCAN Works]() (Step-by-Step)
+
+<br>
+
+1. [**Pick any point not yet checked.**]()
+
+2. [**Draw a circle around it:**]() The size the circle (called *epsilon*, \$ \varepsilon \$) says what counts as "close."
+
+3. [**Count all the neighbors inside the circle.**]()
+    - **If enough neighbors** (at least MinPts), this is a *core point*—start a new group!
+    - **If not enough:** Maybe a border point or "noise."
+
+4. [**Grow the group:**]() For each direct neighbor that is a core point, include their neighbors too—so the group grows!
+
+5. [**Repeat:**]() Until every point is grouped or marked as noise.
 
 
+<br><br>
 
 
+## [Core, Border, and Noise Points]()
+
+<br>
+
+- [**Core point:**]() Has lots of friends (enough neighbors within \$ \varepsilon \$).
+
+- [**Border point:**]() Doesn't have enough direct neighbors, but is close to a core point.
+
+- [**Noise:**]() Too far from any busy area. Not in a group at all!
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br>
 
 
 
